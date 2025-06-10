@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+#fullpage .section:nth-child(1) {
+  background: url(./img/main.jpg) center/cover;
+}
+
+#fullpage .section:nth-child(2) {
+  /* background: url(./img/main.jpg) center/cover; */
+}
+#fullpage .section:nth-child(3) {
+}
+#fullpage .section:nth-child(4) {
+  /* background-color: orange; */
+  padding: 20px;
+}
+
+#fullpage .section:nth-child(4) .fp-tableCell {
+  display: flex;
+  flex-wrap: wrap;
+}
+#fullpage .section:nth-child(4) h1 {
+  width: 100%;
+  margin-top: 42px;
+  transform: translate(0, 0);
+}
+#fullpage .section:nth-child(4) .article {
+  width: 47%;
+  margin: 1%;
+  border: 1px solid red;
+}
+#fullpage .section:nth-child(4) .article img {
+  border-radius: 12px;
+  width: 250px;
+}
+
+.menu {
+  width: 100%;
+  height: 38px;
+  background-color: rgba(182, 0, 0, 0.374);
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+.menu ul {
+  display: flex;
+  width: 30%;
+  min-width: 160px;
+}
+.menu li {
+  width: 25%;
+  line-height: 38px;
+  text-align: center;
+}
+.menu a {
+  color: white;
+}
+#fullpage .section:nth-child(3) .fp-tableCell {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+#fullpage .section:nth-child(3) .wrap {
+  width: 90%;
+  min-width: 380px;
+  margin-top: 120px;
+}
+
+#fullpage .section:nth-child(3) .wrap ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#fullpage .section:nth-child(3) .wrap li {
+  width: 25%;
+  height: 320px;
+  background-color: gray;
+}
+#fullpage .section:nth-child(3) img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-title {
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards;
+  animation-delay: 1s;
+  font-size: 80px;
+}
+
+.subtitle {
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards;
+  animation-delay: 2.5s; /* 메인 타이틀보다 약간 늦게 */
+}
